@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: #4B3621;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.nav {
+    display: flex; /* Enables flex layout for links */
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 18px;
+    color: #4B3621;
+    transition: all 0.3s ease; /* Fast, snappy transition */
+}
+
+nav a:hover {
+    color: #000000;
+    transform: scale(1.05); /* Scales smoothly without moving neighbor links */
+}
+
+#nav-btn {
+    border-radius: 10px;
+    border: 2px solid #4B3621;
+    background-color: #4B3621;
+    color: #FDFBF7;
+}
+
+nav img {
+    width: auto;
+    height: 50px;
+    display: block;
+    mix-blend-mode: multiply; /* Blends white background into the parent container */
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    background-color: #FDFBF7;
+    color: #1A0F0A;
+    padding: 6rem 2rem;
+    border-bottom: 2px solid #E5DFD3; /* Visible soft divider */
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    border: 2px solid #4B3621;
+    border-radius: 10px;
+    background-color: #4B3621;
+    color: #FDFBF7;
+    padding: 12px 24px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.hero a:hover {
+    transform: translateY(-3px); /* Lifts button cleanly on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
