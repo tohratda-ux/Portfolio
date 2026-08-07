@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* MOBILE RESPNSIVE STYLES */
+@media (max-width: 768px) {
+    /* PREVENTING SIDE-SCROLLING ACROSS THE WHOLE PAGE */
+    html, body {
+        overflow-x: hidden;
+    }
 
 /* NAVIGATION BAR */
 nav {
@@ -14,22 +20,29 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-weight: bolder;
     width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
 }
 
 .nav {
     display: flex; /* Enables flex layout for links */
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem; 
 }
 
 a {
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 6px 12px;
     color: #4B3621;
     transition: all 0.3s ease; /* Fast, snappy transition */
+    font-size: 0.9rem;
 }
 
 nav a:hover {
@@ -61,12 +74,12 @@ nav img {
 }
 
 .hero h1 {
-    font-size: 2.75rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
